@@ -196,4 +196,4 @@ public double getHourlyRate() {
 public void setHourlyRate(double hourlyRate) {
     this.hourlyRate = hourlyRate;
 }
-       
+}      
