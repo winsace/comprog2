@@ -1,6 +1,3 @@
-import java.io.FileInputStream;
-import java.io.IOException;
-
 public class employee {
     private float hoursWorkedInAWeek;
     private int employeeNumber;
@@ -12,7 +9,7 @@ public class employee {
     private float netWage;
 
 
-    public employee() throws IOException {
+    public employee() {
     }
 
     //getters
@@ -67,11 +64,10 @@ public class employee {
     }
 
     //methods
-    public float computeGrossWage(){
+    public void computeGrossWage(){
         grossWage = employeePay * hoursWorkedInAWeek * 4;
-        return grossWage;
     }
-    public double computeTotalContributions() {
+    public void computeTotalContributions() {
         float pagIBig = 100;
         float philHealth = 300;
         float philHealth1 = (float) ((grossWage * 0.03) / (2));
@@ -174,15 +170,13 @@ public class employee {
         } else if(grossWage>=60000.00){
             totalContributions = (float) (philHealth2 + sss + pagIBig);
         }
-        return totalContributions;
     }
 
-    public float computeTaxableIncome(){
+    public void computeTaxableIncome(){
         taxableIncome = grossWage - totalContributions;
-        return taxableIncome;
     }
 
-    public float computeWithholdingTax(){
+    public void computeWithholdingTax(){
         if (taxableIncome <= 20832.99){
             withholdingTax = 0;
         }else if ((taxableIncome >=20833.00)&&(taxableIncome<=33332.99)){
@@ -196,11 +190,10 @@ public class employee {
         }else if (taxableIncome>=666667.00){
             withholdingTax = (float) ((taxableIncome - 666667.00) * 0.35 + (200833.33));
         }
-        return withholdingTax;
     }
 
-    public float computeNetWage(){
+    public void computeNetWage(){
         netWage = taxableIncome - withholdingTax;
-        return netWage;
     }
 }
+
