@@ -10,7 +10,7 @@ public class login extends JFrame implements ActionListener {
     GridBagConstraints gc = new GridBagConstraints();
     JButton enter = new JButton("ENTER");
     employee emp = new employee();
-    login() throws IOException {
+    login(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setSize(300,180);
@@ -68,3 +68,4 @@ public class login extends JFrame implements ActionListener {
         }
     }
 }
+
