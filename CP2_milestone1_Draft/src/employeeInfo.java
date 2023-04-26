@@ -65,7 +65,7 @@ public class employeeInfo extends JFrame {
             gbc.insets = new Insets(4, 0, 4, 0);
             empDob = new JTextField();
             empDob.setEditable(false);
-            empDob.setText(String.valueOf((sheet.getRow(1).getCell(1))));
+            empDob.setText(String.valueOf((sheet.getRow(1).getCell(3))));
             add(empDob, gbc);
 
             gbc.gridy = 3;
@@ -212,7 +212,7 @@ public class employeeInfo extends JFrame {
             gbc.insets = new Insets(4, 0, 4, 0);
             empDob = new JTextField();
             empDob.setEditable(false);
-            empDob.setText(String.valueOf((sheet.getRow(2).getCell(1))));
+            empDob.setText(String.valueOf((sheet.getRow(2).getCell(3))));
             add(empDob, gbc);
 
             gbc.gridy = 3;
@@ -357,7 +357,7 @@ public class employeeInfo extends JFrame {
             gbc.insets = new Insets(4, 0, 4, 0);
             empDob = new JTextField();
             empDob.setEditable(false);
-            empDob.setText(String.valueOf((sheet.getRow(3).getCell(1))));
+            empDob.setText(String.valueOf((sheet.getRow(3).getCell(3))));
             add(empDob, gbc);
 
             gbc.gridy = 3;
@@ -502,7 +502,7 @@ public class employeeInfo extends JFrame {
             gbc.insets = new Insets(4, 0, 4, 0);
             empDob = new JTextField();
             empDob.setEditable(false);
-            empDob.setText(String.valueOf((sheet.getRow(4).getCell(1))));
+            empDob.setText(String.valueOf((sheet.getRow(4).getCell(3))));
             add(empDob, gbc);
 
             gbc.gridy = 3;
@@ -647,7 +647,7 @@ public class employeeInfo extends JFrame {
             gbc.insets = new Insets(4, 0, 4, 0);
             empDob = new JTextField();
             empDob.setEditable(false);
-            empDob.setText(String.valueOf((sheet.getRow(5).getCell(1))));
+            empDob.setText(String.valueOf((sheet.getRow(5).getCell(3))));
             add(empDob, gbc);
 
             gbc.gridy = 3;
@@ -783,4 +783,6 @@ public class employeeInfo extends JFrame {
             setVisible(true);
         }
     }
+
+
 
