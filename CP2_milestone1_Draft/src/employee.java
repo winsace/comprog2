@@ -1,13 +1,7 @@
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 public class employee {
-    String path = "C:\\Users\\Admin\\Downloads\\motorPh.xlsx";
-    FileInputStream read = new FileInputStream(path);
-    XSSFWorkbook wb = new XSSFWorkbook(read);
-    XSSFSheet sheet = wb.getSheet("Attendance Record");
     private float hoursWorkedInAWeek;
     private int employeeNumber;
     private float employeePay;
